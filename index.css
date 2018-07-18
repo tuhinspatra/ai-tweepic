@@ -1,0 +1,183 @@
+/* 
+
+    blue - #588c7e
+    yellow - #f2e394
+    orange - #f2ae72
+    red - #d96459
+
+
+
+    // light-purple purple grey dark-grey
+    HEX: #c8c3cc HEX: #563f46 HEX: #8ca3a3 HEX: #484f4f
+
+
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #563f46;
+    font: bold 2rem helvetica, sans-serif;
+    width: 100vw;
+    height: 100vh;
+}
+
+#electron-titlebar .button {
+    transform: scale(2.8);
+    margin: 1rem;
+}
+
+.fill {
+    width: 100%;
+    height: 100%;
+}
+
+.center-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.btn {
+    border: 0.3rem solid #c8c3cc;
+    border-radius: 2rem;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+    color: #c8c3cc;
+}
+
+.btn:hover {
+    color: #f2e394;
+    border-color: #f2e394;
+    transition: all .2s ease-in-out;
+    transform: scale(1.1);
+}
+
+.btn:active {
+    color: #f2ae72;
+    border-color: #f2ae72;
+}
+
+.img {
+    height: 16rem;
+    border-radius: 1rem;
+    margin: 1.5rem;
+}
+
+h3 {
+    font-family: system-ui, sans-serif;
+    color: #191111;
+    padding: 3rem;
+}
+
+#list ul {
+    list-style: none;
+}
+
+#list ul li {
+    padding: 10px;
+    font-size: 1rem;
+}
+
+#list ul li a::first-letter {
+    font-size: 2rem;
+}
+
+#list ul li a {
+    font-family: cursive, sans-serif;
+    padding: 1rem;
+    display: block;
+    width: 28rem;
+    background-color: #333;
+    border-left: 1rem solid #222;
+    padding-left: 1.5rem;
+    text-decoration: none;
+    color: #c8c3cc;
+}
+
+#list ul li a:hover {
+    transition: all .2s ease-in-out;
+    color: #f2e394;
+    transform: scale(1.1);
+    box-shadow: 10px 10px 20px #000000;
+}
+
+
+/********* Start of Loader Animation */
+
+h1 {
+    color: #191111;
+    margin: 0;
+    height: 6vmin;
+    width: 60vmin;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+h1::before {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: -1;
+    top: -13vmin;
+    left: 14.5vmin;
+    width: 31vmin;
+    height: 31vmin;
+    border-radius: 50%;
+    border: 1.3vmin solid currentColor;
+    box-sizing: border-box;
+}
+
+em {
+    color: currentColor;
+    font-size: 7.5vmin;
+    position: relative;
+    font-style: normal;
+    width: 10vmin;
+    text-align: center;
+}
+
+em.planet {
+    animation: planet-rotate 8s linear infinite;
+    position: relative;
+}
+
+em.planet::before {
+    content: "";
+    position: absolute;
+    top: 2.1vmin;
+    left: 1.vmin;
+    z-index: -1;
+    width: 5.5vmin;
+    height: 5.5vmin;
+    border-radius: 50%;
+    background: #f2e394;
+}
+
+em.planet.left {
+    transform-origin: 20vmin 2.5vmin;
+}
+
+em.planet.right {
+    transform-origin: -10vmin 2.5vmin;
+}
+
+@keyframes planet-rotate {
+    to {
+        transform: rotate(1turn);
+    }
+}
+
+/* End of Loader Animation */

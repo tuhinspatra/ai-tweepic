@@ -1,0 +1,25 @@
+{
+  "name": "ai-tweepic",
+  "productName": "AI Tweepic",
+  "version": "1.0.0",
+  "description": "A native desktop app (available for Windows, Mac & Linux) that generates tweets (Twitter status updates) based on a given input image",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "package-mac": "electron-packager . --overwrite --platform=darwin --arch=x64 --icon=assets/icons/fav.icns --prune=true --out=release-builds",
+    "package-win": "electron-packager . ai-tweepic --overwrite --asar=true --platform=win32 --arch=ia32 --icon=assets/icons/fav.ico --prune=true --out=release-builds --version-string.CompanyName=armag-pro --version-string.FileDescription=armag-pro --version-string.ProductName=\"AI Tweepic\"",
+    "package-linux": "electron-packager . ai-tweepic --overwrite --asar=true --platform=linux --arch=x64 --icon=assets/icons/png/1024x1024.png --prune=true --out=release-builds"
+  },
+  "author": "armag-pro",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^2.0.4",
+    "electron-packager": "^12.1.0"
+  },
+  "dependencies": {
+    "clarifai": "^2.8.0",
+    "electron-titlebar": "0.0.3",
+    "request": "^2.87.0"
+  }
+}
