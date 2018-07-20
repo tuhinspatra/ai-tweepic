@@ -3,17 +3,14 @@
 
 
 <p align="center">
-<a href="https://github.com/armag-pro/Bandit-Girl-AR/">
+<a href="https://github.com/armag-pro/ai-tweepic/">
     <img src="https://img.shields.io/badge/version-1.1-blue.svg" alt="version 1.1">
 </a>
-<a href="https://github.com/armag-pro/Bandit-Girl-AR/pulls">
+<a href="https://github.com/armag-pro/ai-tweepic/pulls">
     <img src="https://img.shields.io/badge/PRs-Welome-brightgreen.svg" alt="PRs Welcome">
 </a>
-<a href="https://github.com/armag-pro/Bandit-Girl-AR">
+<a href="https://github.com/armag-pro/ai-tweepic/blob/master/LICENSE">
     <img src="https://img.shields.io/apm/l/vim-mode.svg" alt="License MIT">
-</a>
-<a href="https://github.com/armag-pro/Bandit-Girl-AR">
-    <img src="https://img.shields.io/github/size/armag-pro/Bandit-Girl-AR/ProjectSettings/ProjectVersion.txt.svg" alt="Github file size">
 </a>
 </p>
 
@@ -51,6 +48,8 @@ AI-Tweepic is a native desktop app (available for Windows, Mac & Linux) that gen
     * Upload an image
     * Hit upload
     * Voila!
+    
+### The code for the API used in backend hosted [here](https://dashboard.heroku.com/apps/tweepic) can be found [here](https://github.com/armag-pro/tweepic-api).
 
 ## HowTo's & Scope for Improvement:
 * The LSTM model is pretrained on my GPU-less local machine for about an hour. The results can be drastically improved by training on free cloud engines. [FloydHub](https://www.floydhub.com/) is the easiest to get started.
@@ -74,4 +73,4 @@ from [this webpage](http://thinknook.com/twitter-sentiment-analysis-training-cor
 Certain resources(icons, images, etc) require attribution.
 
 
-Copyright (c) 2018-present, [armag-pro](https://armag-pro.github.io/)
+Copyright (c) 2018-present, [armag-pro](https://armag-pro.github.io/).
